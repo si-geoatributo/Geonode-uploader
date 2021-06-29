@@ -1,0 +1,5 @@
+pyproj
+json
+requests
+unidecode
+argparse
