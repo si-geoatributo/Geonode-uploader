@@ -25,14 +25,14 @@ To install all requirements at once:
 pip3 install -r requirements.txt
 ```
 
-After installing all the requirements, in order to execute it can be given execution permissions:
+This script can be executed by giving execution permissions or by passing it to python3 as argument:
 
 ```
 chmod +x geo_automate.py
 ./geo_automate.py -h
 ```
 
-Or just running by passing to as argument `python3`:
+OR
 
 ```
 python3 geo_automate.py -h
