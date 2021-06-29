@@ -195,7 +195,7 @@ def upload_layers(thumbnails, headers, cookies):
                 try: 
                     print('\033[94m[!]\033[0m Setting thumbnail for layer ' + layer);
                     headers = {'Origin': url, 'Referer': url + '/layers/' + geonode_layer_name + ':' + geonode_layer, 'X-CSRFToken': csrf_token, 'Host': url[8:]};
-                    req = requests.Request('GET', url + '/geoserver/rest/workspaces/geonode/datastores/geonode_data/featuretypes/' + geonode_layer_name + '.json?access_token=bBnzSPHvTdmyGRsqPjrRdvSDx7BPwQ').prepare();
+                    req = requests.Request('GET', url + '/geoserver/rest/workspaces/geonode/datastores/geonode_data/featuretypes/' + geonode_layer_name + '.json').prepare();
 
                     s = requests.Session();
                     r = s.send(req);
